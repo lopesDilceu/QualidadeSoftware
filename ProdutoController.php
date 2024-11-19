@@ -95,7 +95,7 @@ class ProdutoController extends Controller
          $avaliacao->av_comentario = $request->av_comentario;
          $avaliacao->save();
      
-         flash('Avaliação enviada com sucesso!', 'success',[], 'Sucesso');
+         flash('Avaliação enviada com muito sucesso!', 'success',[], 'Sucesso');
          return redirect()->route('minhas-compras');
      }
     public function edit(Request $request, string $id)
